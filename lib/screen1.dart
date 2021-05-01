@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen1 extends StatefulWidget {
@@ -12,229 +13,243 @@ class _Screen1State extends State<Screen1> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(
-        title: Text(
-          "Good Evening",
-          style: TextStyle(
-            color: txt_color,
-          ),
-        ),
-        backgroundColor: Colors.transparent,
-      ),
+
       body: ListView(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Container(
-              height: 200,
-              decoration: BoxDecoration(border: Border.all(color: txt_color)),
-              child: Row(
-                //Row
-                children: [
-                  Expanded(
-                    child: Column(
-                      //Column1
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 5.0, vertical: 2),
-                          child: Expanded(
-                            child: Container(
-                              //Container 1
-                              height: 60,
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: txt_color),
-                                  borderRadius: BorderRadius.circular(20)),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      flex: 2,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          border: Border.all(color: txt_color),
-                                        ),
-                                      )),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: txt_color),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Expanded(
-                            child: Container(
-                              //Container 2
-                              height: 60,
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      flex: 2,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          border: Border.all(color: txt_color),
-                                        ),
-                                      )),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: txt_color),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: txt_color),
-                                  borderRadius: BorderRadius.circular(20)),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                          child: Expanded(
-                            child: Container(
-                              height: 60,
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      flex: 2,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          border: Border.all(color: txt_color),
-                                        ),
-                                      )),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: txt_color),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: txt_color),
-                                  borderRadius: BorderRadius.circular(20)),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    child: Column(
-                      //Coulmn2
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 5, vertical: 2),
-                          child: Expanded(
-                            child: Container(
-                              height: 60,
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      flex: 2,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          border: Border.all(color: txt_color),
-                                        ),
-                                      )),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: txt_color),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: txt_color),
-                                  borderRadius: BorderRadius.circular(20)),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(5),
-                          child: Expanded(
-                            child: Container(
-                              height: 60,
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      flex: 2,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          border: Border.all(color: txt_color),
-                                        ),
-                                      )),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: txt_color),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: txt_color),
-                                  borderRadius: BorderRadius.circular(20)),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 5),
-                          child: Expanded(
-                            child: Container(
-                              height: 60,
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      flex: 2,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          border: Border.all(color: txt_color),
-                                        ),
-                                      )),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: txt_color),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: txt_color),
-                                  borderRadius: BorderRadius.circular(20)),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          )
+        Padding(child: Text("Good Evening !", style: TextStyle(color: txt_color,fontSize: 30,letterSpacing: 0.5),),padding: EdgeInsets.all(15),),
+          Cont1(),
+
         ],
       ),
     );
   }
 }
+class Cont1 extends StatefulWidget {
+  @override
+  _Cont1State createState() => _Cont1State();
+}
+
+class _Cont1State extends State<Cont1> {
+  var txt_color=Colors.white;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: Container(
+        height: 200,
+        child: Row(
+          //Row
+          children: [
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal:5.0),
+                child: Column(
+                  //Column1
+                  children: [
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 5),
+                        //Container 1
+                        height: 60,
+
+                        decoration: BoxDecoration(
+                            // border: Border.all(color: txt_color),
+                            borderRadius: BorderRadius.circular(20),
+                           color: Colors.grey),
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 2,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: txt_color),
+                                  ),
+
+                                )),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: txt_color),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 5),
+
+                        //Container 2
+                        height: 60,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 2,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: txt_color),
+                                  ),
+                                )),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: txt_color),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(color: txt_color),
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.grey),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 5),
+
+                        height: 60,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 2,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: txt_color),
+                                  ),
+                                )),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: txt_color),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(color: txt_color),
+                            borderRadius: BorderRadius.circular(20),color: Colors.grey),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal:8.0),
+                child: Column(
+                  //Coulmn2
+                  children: [
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 5),
+
+                        height: 60,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 2,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: txt_color),
+                                  ),
+                                )),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: txt_color),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(color: txt_color),
+                            borderRadius: BorderRadius.circular(20),
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 5),
+
+                        height: 60,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 2,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: txt_color),
+                                  ),
+                                )),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: txt_color),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(color: txt_color),
+                            borderRadius: BorderRadius.circular(20),
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 5),
+
+                        height: 60,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 2,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: txt_color),
+                                  ),
+                                )),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: txt_color),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            // border: Border.all(color: txt_color),
+                            borderRadius: BorderRadius.circular(20),
+                        color: Colors.grey,),
+                      ),
+                    ),
+
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
